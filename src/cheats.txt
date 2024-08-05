@@ -1,0 +1,52 @@
+
+ --------------------------- INSTALLING CSS ---------
+1> npm install -D tailwindcss postcss autoprefixer
+
+2> npx tailwindcss init -p
+
+3> Config
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+4>index.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+//NOTES
+Tailwind CSS generates the utility classes
+PostCSS processes the Tailwind CSS output
+Autoprefixer adds necessary vendor prefixes to the final CSS
+
+-------------ADDING CUSTOM COLRS------------
+extend: {
+      colors:{
+        banana:'#f8fc1d'
+      }
+    },
+
+------------ ALLOWING DARK MODE-----------
+1> config.js
+
+export default {
+  darkMode:"class",
+  theme: {
+
+2> Add property with dark:
+
+3> add button to toggle
+ <button id="toggleDark" onclick="document.body.classList.toggle('dark')" class="text-blue-900 bg-blue-400 p-2 m-2 dark:text-white rounded-lg ring-4"  >Toggle Dark Mode</button>
+
+
+
+
