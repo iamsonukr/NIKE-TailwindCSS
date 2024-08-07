@@ -1,4 +1,5 @@
-
+https://www.youtube.com/watch?v=tS7upsfuxmo&t=155s
+https://github.com/adrianhajdin/nike_landing_page
  --------------------------- INSTALLING CSS ---------
 1> npm install -D tailwindcss postcss autoprefixer
 
