@@ -23,6 +23,18 @@ export default {
 @tailwind components;
 @tailwind utilities;
 
+5> Installing daisy UI (optional)
+   i> npm i -D daisyui@latest
+   ii>tailwind.config.js
+         module.exports = {
+         //...
+         plugins: [
+           require('daisyui'),
+         ],
+        }
+// Get Components from 
+https://daisyui.com/components/button/
+
 
 //NOTES
 Tailwind CSS generates the utility classes
